@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Units;
+namespace Confee\Units;
 
 use Exception;
 use Illuminate\Auth\AuthenticationException;

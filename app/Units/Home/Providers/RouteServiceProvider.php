@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Units\Home\Providers;
+namespace Confee\Units\Home\Providers;
 
-use App\Units\Home\Routes\Api;
-use App\Units\Home\Routes\Console;
-use App\Units\Home\Routes\Web;
+use Confee\Units\Home\Routes\Api;
+use Confee\Units\Home\Routes\Console;
+use Confee\Units\Home\Routes\Web;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 
 class RouteServiceProvider extends ServiceProvider
@@ -16,7 +16,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    protected $namespace = 'App\Units\Home\Http\Controllers';
+    protected $namespace = 'Confee\Units\Home\Http\Controllers';
 
     /**
      * Define your route model bindings, pattern filters, etc.

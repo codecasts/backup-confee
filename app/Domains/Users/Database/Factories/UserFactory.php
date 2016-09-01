@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Domains\Users\Database\Factories;
+namespace Confee\Domains\Users\Database\Factories;
 
-use App\Domains\Users\User;
+use Confee\Domains\Users\User;
 use Codecasts\Support\Domain\ModelFactory;
 
 /**

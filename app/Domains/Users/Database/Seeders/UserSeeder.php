@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Domains\Users\Database\Seeders;
+namespace Confee\Domains\Users\Database\Seeders;
 
-use App\Domains\Users\User;
+use Confee\Domains\Users\User;
 use Illuminate\Database\Seeder;
 
 /**

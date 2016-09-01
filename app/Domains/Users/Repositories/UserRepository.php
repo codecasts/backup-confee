@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Domains\Users\Repositories;
+namespace Confee\Domains\Users\Repositories;
 
-use App\Domains\Users\Transformers\UserTransformer;
-use App\Domains\Users\User;
+use Confee\Domains\Users\Transformers\UserTransformer;
+use Confee\Domains\Users\User;
 use Artesaos\Warehouse\AbstractCrudRepository;
-use App\Domains\Users\Contracts\UserRepository as UserRepositoryContract;
+use Confee\Domains\Users\Contracts\UserRepository as UserRepositoryContract;
 use Artesaos\Warehouse\Traits\ImplementsFractal;
 
 /**

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Units\Auth\Providers;
+namespace Confee\Units\Auth\Providers;
 
 use Codecasts\Support\Units\ServiceProvider;
 

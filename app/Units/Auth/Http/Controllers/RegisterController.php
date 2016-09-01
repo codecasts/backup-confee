@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Units\Auth\Http\Controllers;
+namespace Confee\Units\Auth\Http\Controllers;
 
-use App\Domains\Users\Contracts\UserRepository;
-use App\Domains\Users\User;
+use Confee\Domains\Users\Contracts\UserRepository;
+use Confee\Domains\Users\User;
 use Codecasts\Support\Http\Controller;
 use Illuminate\Foundation\Auth\RegistersUsers;
 

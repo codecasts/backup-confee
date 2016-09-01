@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Units\Home\Routes;
+namespace Confee\Units\Home\Routes;
 
 use Codecasts\Support\Http\Routing\RouteFile;
 
