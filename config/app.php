@@ -181,14 +181,14 @@ return [
         /**
          * Domains
          */
-        App\Domains\Users\Providers\DomainServiceProvider::class,
+        Confee\Domains\Users\Providers\DomainServiceProvider::class,
 
         /**
          * Units
          */
-        App\Units\Core\Providers\UnitServiceProvider::class,
-        App\Units\Auth\Providers\UnitServiceProvider::class,
-        App\Units\Home\Providers\UnitServiceProvider::class,
+        Confee\Units\Core\Providers\UnitServiceProvider::class,
+        Confee\Units\Auth\Providers\UnitServiceProvider::class,
+        Confee\Units\Home\Providers\UnitServiceProvider::class,
 
     ],
 

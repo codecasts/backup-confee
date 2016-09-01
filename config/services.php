@@ -30,7 +30,7 @@ return [
     ],
 
     'stripe' => [
-        'model' => App\Domains\Users\User::class,
+        'model' => Confee\Domains\Users\User::class,
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],
