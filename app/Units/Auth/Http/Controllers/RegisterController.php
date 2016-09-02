@@ -5,7 +5,8 @@ namespace Confee\Units\Auth\Http\Controllers;
 use Confee\Domains\Users\Contracts\UserRepository;
 use Confee\Domains\Users\User;
 use Codecasts\Support\Http\Controller;
-use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Http\Request;
+use Tymon\JWTAuth\Facades\JWTAuth;
 
 /**
  * Class RegisterController.
@@ -16,14 +17,6 @@ use Illuminate\Foundation\Auth\RegistersUsers;
  */
 class RegisterController extends Controller
 {
-    use RegistersUsers;
-
-    /**
-     * Where to redirect users after login / registration.
-     *
-     * @var string
-     */
-    protected $redirectTo = '/home';
 
     /**
      * @var UserRepository
@@ -45,13 +38,20 @@ class RegisterController extends Controller
     }
 
     /**
-     * Show the application registration form.
+     * Handle a registration request for the application.
      *
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function showRegistrationForm()
+    public function register(Request $request)
     {
-        return view('auth::register');
+        $this->validator($request->all())->validate();
+
+        $user = $this->create($request->all());
+
+        $token = JWTAuth::fromUser($user);
+
+        return ['token' => $token];
     }
 
     /**
@@ -66,7 +66,7 @@ class RegisterController extends Controller
         return app('validator')->make($data, [
             'name' => 'required|max:255',
             'email' => 'required|email|max:255|unique:users',
-            'password' => 'required|min:6|confirmed',
+            'password' => 'required|min:6',
         ]);
     }
 
