@@ -18,8 +18,20 @@ class Api extends RouteFile
      */
     public function routes()
     {
-        $this->router->get('123', function() {
-            return 'ok';
+        $this->router->group(['prefix' => 'auth'], function() {
+            $this->defineLoginAndRegisterRoutes();
+        });
+
+        $this->router->group(['prefix' => 'v1/auth'], function() {
+           $this->defineLoginAndRegisterRoutes();
         });
     }
+
+    protected function defineLoginAndRegisterRoutes()
+    {
+        $this->router->post('register', 'RegisterController@register');
+
+        $this->router->post('login', 'LoginController@login');
+    }
+
 }

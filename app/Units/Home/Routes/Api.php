@@ -3,6 +3,7 @@
 namespace Confee\Units\Home\Routes;
 
 use Codecasts\Support\Http\Routing\RouteFile;
+use Illuminate\Http\Request;
 
 /**
  * Api Routes.

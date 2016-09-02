@@ -24,11 +24,11 @@ class HttpKernel extends Kernel
      */
     protected $middlewareGroups = [
         'web' => [
-            \App\Units\Core\Http\Middleware\EncryptCookies::class,
+            \Confee\Units\Core\Http\Middleware\EncryptCookies::class,
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
             \Illuminate\Session\Middleware\StartSession::class,
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
-            \App\Units\Core\Http\Middleware\VerifyCsrfToken::class,
+            \Confee\Units\Core\Http\Middleware\VerifyCsrfToken::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
 
@@ -50,7 +50,7 @@ class HttpKernel extends Kernel
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
         'bindings' => \Illuminate\Routing\Middleware\SubstituteBindings::class,
         'can' => \Illuminate\Auth\Middleware\Authorize::class,
-        'guest' => \App\Units\Core\Http\Middleware\RedirectIfAuthenticated::class,
+        'guest' => \Confee\Units\Core\Http\Middleware\RedirectIfAuthenticated::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
     ];
 }
