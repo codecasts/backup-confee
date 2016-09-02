@@ -1,7 +1,7 @@
 {
-    "name": "codecasts/laravel",
-    "description": "The Laravel Framework - CODECASTS Skeleton.",
-    "keywords": ["framework", "laravel", "codecasts"],
+    "name": "codecasts/confee-api",
+    "description": "Confee.club - API.",
+    "keywords": ["framework", "laravel", "codecasts", "confee"],
     "license": "MIT",
     "type": "project",
     "require": {
