@@ -19,13 +19,13 @@ class Web extends RouteFile
     public function routes()
     {
         // Authentication routes.
-        $this->authenticationRoutes();
+        //$this->authenticationRoutes();
 
         // Registration routes.
-        $this->registrationRoutes();
+        //$this->registrationRoutes();
 
         // Password Reset routes.
-        $this->passwordResetRoutes();
+        //$this->passwordResetRoutes();
     }
 
     protected function authenticationRoutes()

@@ -61,7 +61,7 @@ class RouteServiceProvider extends ServiceProvider
         (new Api([
             'middleware' => 'api',
             'namespace' => $this->namespace,
-            'prefix' => 'api',
+            //'prefix' => 'api',
         ]))->register();
     }
 
