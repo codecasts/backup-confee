@@ -1,15 +1,18 @@
 {
-    "name": "codecasts/laravel",
-    "description": "The Laravel Framework - CODECASTS Skeleton.",
-    "keywords": ["framework", "laravel", "codecasts"],
+    "name": "codecasts/confee-api",
+    "description": "Confee.club - API.",
+    "keywords": ["framework", "laravel", "codecasts", "confee"],
     "license": "MIT",
     "type": "project",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
         "php": ">=5.6.4",
         "laravel/framework": "5.3.*",
         "codecasts/support": "^1.0",
         "league/fractal": "^0.13.0",
-        "predis/predis": "^1.1"
+        "predis/predis": "^1.1",
+        "tymon/jwt-auth": "^1.0.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

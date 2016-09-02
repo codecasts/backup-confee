@@ -60,9 +60,9 @@ class RouteServiceProvider extends ServiceProvider
     protected function mapApiRoutes()
     {
         (new Api([
-            'middleware' => 'api',
+            'middleware' => ['auth:api'],
             'namespace' => $this->namespace,
-            'prefix' => 'api',
+            'prefix' => 'api/auth',
         ]))->register();
     }
 
