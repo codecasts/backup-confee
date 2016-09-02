@@ -18,5 +18,8 @@ class Api extends RouteFile
      */
     public function routes()
     {
+        $this->router->get('123', function() {
+            return 'ok';
+        });
     }
 }
